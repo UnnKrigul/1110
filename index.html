@@ -21,45 +21,49 @@
 	<header>
 		<h1>Payment</h1>
 	</header>
-	<section class="card__info">
-		<form class="col--80">
-			<div class="col--60">
-				<p>Card number:</p>
-				<input type="text" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" class="col--100">
-				<p>Name:</p>
-				<input type="text" name="name" placeholder="John Doe" class="col--100">	
+	<div class="body__wrapper">
+		<section class="card__info">
+			<form class="col--80">
+				<div class="col--60">
+					<p>Card number:</p>
+					<input type="text" name="cardNumber" placeholder="XXXX XXXX XXXX XXXX" class="col--100">
+					<p>Name:</p>
+					<input type="text" name="name" placeholder="John Doe" class="col--100">	
+				</div>
+				<div class="col--30">
+					<p>Expiry date:</p>
+					<input type="text" name="expire" placeholder="XX/XX" class="col--100">
+					<p>CVC:</p>
+					<input type="text" name="cvc" placeholder="XXX" class="col--100">
+				</div>
+			</form>
+		</section>
+		<section class="price">
+			<div class="price__wrapper">
+				<div class="product col--80">
+				<p>Product 1</p>
+				<p>10€</p>
 			</div>
-			<div class="col--30">
-				<p>Expiry date:</p>
-				<input type="text" name="expire" placeholder="XX/XX" class="col--100">
-				<p>CVC:</p>
-				<input type="text" name="cvc" placeholder="XXX" class="col--100">
-			</div>
-		</form>
-	</section>
-	<section class="price">
-		<div class="price__wrapper">
 			<div class="product col--80">
-			<p>Product 1</p>
-			<p>10€</p>
-		</div>
-		<div class="product col--80">
-			<p>Product 2</p>
-			<p>20€</p>
-		</div>
-		<div class="total col--80">
-			<p>Total</p>
-			<div class="total__price">
-				<h1>30</h1>
-				<p>€</p>
+				<p>Product 2</p>
+				<p>20€</p>
 			</div>
-		</div>
-		</div>
-	</section>
+			<div class="total col--80">
+				<p>Total</p>
+				<div class="total__price">
+					<h1>30</h1>
+					<p>€</p>
+				</div>
+			</div>
+			</div>
+		</section>
+	</div>
 	<footer>
 		<div class="footer__wrapper">
-			<h2>Continue</h2>
-			<i class="fas fa-angle-right nav__back"></i>
+			<div class="footer__btn">
+				<h2>Continue</h2>
+				<i class="fas fa-angle-right nav__back"></i>
+			</div>
 		</div>
 	</footer>
 </body>

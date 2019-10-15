@@ -39,6 +39,13 @@ body {
 	width: 100%;
 }
 
+.body__wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
 			/*NAV*/
 
 nav {
@@ -156,7 +163,6 @@ input::placeholder {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 400px;
 	flex-grow: 1;
 	justify-content: center;
 	align-items: flex-start;
@@ -165,7 +171,7 @@ input::placeholder {
 	width: 100%;
 
 	border-radius: 0 0 0 40px;
-	background-color: #000;
+	background-color: #000712;
 	margin-bottom: -40px;
 }
 
@@ -239,4 +245,87 @@ footer {
 .footer__wrapper h2 {
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+.footer__btn {
+	display: flex;
+	align-items: center;
+	width: 200px;
+	justify-content: space-around;
+}
+
+@media only screen and (min-width: 480px) {
+	body {
+		align-items: center;
+
+		background-color: #000712;
+	}
+
+	.body__wrapper {
+		align-items: center;
+	}
+
+	header {
+		border-radius: 0;
+		margin-bottom: 0;
+	}
+
+	.card__info {
+		border-radius: 40px;
+		margin-bottom: 0;
+
+		width: 80%;
+		margin: 20px;
+	}
+
+	.price {
+		border-radius: 40px;
+		margin-bottom: 0;
+
+		width: 80%;
+		margin-bottom: 40px;
+	}
+
+	.price__wrapper {
+		padding-top: 0;
+	}
+
+	.footer__wrapper {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	body {
+	}
+
+	.body__wrapper {
+		flex-direction: row;
+	}
+
+	.card__info {
+		width: 40%;
+	}
+
+	.price {
+		width: 40%;
+	}
+
+	footer {
+		background-color: #000712;
+		height: 200px;
+	}
+
+	.footer__btn {
+		background-color: #5d25c4;
+		height: 50px;
+		border-radius: 5px;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+
+	.footer__btn:hover {
+		background-color: #7e55c9;
+		transform: scale(1.1);
+	}
 }
